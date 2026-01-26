@@ -1,0 +1,25 @@
+#VRML V2.0 utf8
+#Generated with stl2wrl - Bradley Boccuzzi 2020-2025
+
+Shape {
+	appearance Appearance {material DEF MAT Material {
+		ambientIntensity 0.45
+		diffuseColor 0.8 0.8 0.7
+		specularColor 0.19 0.28 0.3
+		emissiveColor 0.0 0.0 0.0
+		shininess 0.85
+		transparency 0.0
+		}
+	}
+}
+Shape {
+	geometry IndexedFaceSet {
+		creaseAngle 0.50 coordIndex [0, 1, 2, -1]
+		coord Coordinate {
+			point [
+0.0000000 0.0000000 0.0000000, 1000.0000000 0.0000000 0.0000000, 0.0000000 1000.0000000 0.0000000
+			]
+		}
+	}
+	appearance Appearance{material USE MAT}
+}
