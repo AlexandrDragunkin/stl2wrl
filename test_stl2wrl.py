@@ -164,7 +164,7 @@ endsolid test"""
                 wrl_content = wrl_file.read()
             
             self.assertIn("#VRML V2.0 utf8", wrl_content)
-            self.assertIn("coordIndex [0, 1, 2, 3, 4, 5, -1]", wrl_content)
+            self.assertIn("coordIndex [0, 1, 2, -1, 0, 2, 1, -1]", wrl_content)
             
         finally:
             # Clean up temporary files

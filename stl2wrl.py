@@ -200,6 +200,10 @@ def validate_stl_path(stl_path: str) -> None:
     if not os.path.isabs(stl_path):
         raise ValueError("stl_path must be a full (absolute) path")
 
+    # Check file extension
+    if not stl_path.lower().endswith('.stl'):
+        raise ValueError("File must have .stl extension")
+
     # Check file existence
     if not os.path.exists(stl_path):
         raise FileNotFoundError(f"STL file not found: {stl_path}")
@@ -330,6 +334,10 @@ def main() -> None:
     stl_path = args.stl
     # Get scaling factor
     sf = args.scaling
+    
+    # Convert relative path to absolute path
+    stl_path = os.path.abspath(stl_path)
+    
     try:
         # Check that stl_path is the full path to a real STL file in ASCII characters
         validate_stl_path(stl_path)
@@ -346,11 +354,7 @@ def main() -> None:
     else:
         # Get WRL file name
         wrl_name = os.path.basename(stl_path).split('.')[0] + '.wrl'
-        wrl_path = os.path.dirname(stl_path)
-        if wrl_path == "":
-            wrl_path = wrl_name
-        else:
-            wrl_path = os.path.join(wrl_path, wrl_name)
+        wrl_path = os.path.join(os.path.dirname(stl_path), wrl_name)
 
     # Perform conversion
     convert(stl_path, wrl_path, sf)
