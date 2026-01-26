@@ -33,8 +33,9 @@ Performance test results on a Windows 11 system with AMD Ryzen 7 5800H processor
 - Command: `python stl2wrl.py demo\zynq_chip.stl 0.01`
 
 ### Large model (440.stl - 1.0 scale):
+- Size: >150 MB *Due to the very large size of the model, the 440.stl file has not been added to the repository.*
 - Time: 18.17 seconds
-- Command: `python stl2wrl.py demo\440.stl 1`
+- Command: `python stl2wrl.py demo/440.stl 1`
 
 ## Example using a CLG400 footprint:
 ```
