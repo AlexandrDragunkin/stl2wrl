@@ -17,9 +17,27 @@ For working with binary STL files, you need to install the following dependencie
 - numpy
 - numpy-stl
 
+### Installation
+
 You can install them using pip:
 ```
 pip install numpy numpy-stl
+```
+
+Or use the provided requirements.txt file:
+```
+pip install -r requirements.txt
+```
+
+### Python Version Compatibility
+
+The numpy-stl library has different compatibility requirements based on your Python version:
+- For Python < 3.9: numpy-stl version 2.11.0 to 3.1.2
+- For Python >= 3.9: numpy-stl version 3.1.2 and above
+
+For the K3 environment (Python 3.7 32-bit Windows only):
+```
+pip install numpy-stl==3.1.2 -U --target <UserProto>/site-packages
 ```
 
 For ASCII STL files, no additional dependencies are required.
