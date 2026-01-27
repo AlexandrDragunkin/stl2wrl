@@ -2,3 +2,4 @@
 DEBUGGING.md
 .vscode/launch.json
 *.pyc
+.pypirc
