@@ -28,6 +28,13 @@ Or use the provided requirements.txt file:
 pip install -r requirements.txt
 ```
 
+### Installing from Test PyPI
+
+To install the package from Test PyPI, use the following command:
+```
+pip install --index-url https://test.pypi.org/simple/ stl2wrl
+```
+
 ### Python Version Compatibility
 
 The numpy-stl library has different compatibility requirements based on your Python version:
