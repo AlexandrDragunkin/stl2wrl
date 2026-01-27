@@ -1,13 +1,12 @@
 Metadata-Version: 2.1
 Name: stl2wrl
-Version: 1.0.0
+Version: 1.1.0
 Summary: A tool to convert STL files to VRML/WRL format
 Home-page: https://github.com/yourusername/stl2wrl
 Author: Bradley Boccuzzi
-Author-email: Bradley Boccuzzi <bradleyboccuzzi@example.com>
-License: MIT
-Project-URL: Homepage, https://github.com/yourusername/stl2wrl
-Project-URL: Repository, https://github.com/yourusername/stl2wrl
+Author-email: bradleyboccuzzi@example.com
+License: UNKNOWN
+Platform: UNKNOWN
 Classifier: Development Status :: 5 - Production/Stable
 Classifier: Intended Audience :: Developers
 Classifier: Intended Audience :: Manufacturing
@@ -37,7 +36,6 @@ This version has been enhanced with:
 - Comprehensive English documentation for all functions and classes
 - Improved error handling for file validation
 - Support for both ASCII and binary STL files (with numpy-stl)
-- All comments and error messages translated to English
 
 ## Dependencies
 
@@ -102,3 +100,4 @@ Performance test results on a Windows 11 system with AMD Ryzen 7 5800H processor
 ## Contributors
 - Original implementation by Bradley Boccuzzi
 - Improvements by Alexander Dragunkin and SOURCECRAFT CODE assistant
+

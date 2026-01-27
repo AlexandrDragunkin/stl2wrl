@@ -1,2 +1,3 @@
 [console_scripts]
 stl2wrl = stl2wrl:main
+

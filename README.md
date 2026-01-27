@@ -9,7 +9,6 @@ This version has been enhanced with:
 - Comprehensive English documentation for all functions and classes
 - Improved error handling for file validation
 - Support for both ASCII and binary STL files (with numpy-stl)
-- All comments and error messages translated to English
 
 ## Dependencies
 

@@ -4,6 +4,7 @@ README.md
 pyproject.toml
 requirements.txt
 setup.py
+stl2wrl.py
 stl2wrl.egg-info/PKG-INFO
 stl2wrl.egg-info/SOURCES.txt
 stl2wrl.egg-info/dependency_links.txt

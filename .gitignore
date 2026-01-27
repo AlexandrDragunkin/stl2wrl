@@ -3,3 +3,4 @@ DEBUGGING.md
 .vscode/launch.json
 *.pyc
 .pypirc
+PUBLISHING.md

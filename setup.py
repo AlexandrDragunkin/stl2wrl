@@ -8,14 +8,14 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setup(
     name="stl2wrl",
-    version="1.0.0",
+    version="1.1.0",
     author="Bradley Boccuzzi",
     author_email="bradleyboccuzzi@example.com",
     description="A tool to convert STL files to VRML/WRL format",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/yourusername/stl2wrl",
-    packages=find_packages(),
+    py_modules=["stl2wrl"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",

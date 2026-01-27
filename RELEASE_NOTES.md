@@ -1,13 +1,10 @@
-# Release Notes - stl2wrl v1.0.0
+# Release Notes - stl2wrl v1.1.0
 
 ## What's New in This Version
 
 ### Major Improvements
-- Full type annotations for all functions and methods
-- Comprehensive English documentation for all functions and classes
-- Improved error handling for file validation
-- Support for both ASCII and binary STL files (using numpy-stl)
-- All comments and error messages translated to English
+- Updated dates in comments to 2026
+- All dependencies and requirements remain unchanged
 
 ### Compatibility and Dependencies
 - Support for Python versions 3.7-3.12
