@@ -1,6 +1,6 @@
 # stl2wrl - Convert an STL file to VRML/WRL
 
-Useful for converting basic STL objects to Virtual Reality Modeling Language (VRML/WRL) files in KiCAD (or other programs).
+Useful for converting basic STL objects to Virtual Reality Modeling Language (VRML/WRL) files in KiCAD, Outline3D (or other programs).
 
 ## Recent Improvements
 
