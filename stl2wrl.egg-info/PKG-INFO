@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: stl2wrl
+Version: 1.0.0
+Summary: A tool to convert STL files to VRML/WRL format
+Home-page: https://github.com/yourusername/stl2wrl
+Author: Bradley Boccuzzi
+Author-email: Bradley Boccuzzi <bradleyboccuzzi@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/stl2wrl
+Project-URL: Repository, https://github.com/yourusername/stl2wrl
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Multimedia :: Graphics :: 3D Modeling
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# stl2wrl - Convert an STL file to VRML/WRL
+
+Useful for converting basic STL objects to Virtual Reality Modeling Language (VRML/WRL) files in KiCAD, Outline3D (or other programs).
+
+## Recent Improvements
+
+This version has been enhanced with:
+- Full type annotations for all functions and methods
+- Comprehensive English documentation for all functions and classes
+- Improved error handling for file validation
+- Support for both ASCII and binary STL files (with numpy-stl)
+- All comments and error messages translated to English
+
+## Dependencies
+
+For working with binary STL files, you need to install the following dependencies:
+- numpy
+- numpy-stl
+
+### Installation
+
+You can install them using pip:
+```
+pip install numpy numpy-stl
+```
+
+Or use the provided requirements.txt file:
+```
+pip install -r requirements.txt
+```
+
+### Python Version Compatibility
+
+The numpy-stl library has different compatibility requirements based on your Python version:
+- For Python < 3.9: numpy-stl version 2.11.0 to 3.1.2
+- For Python >= 3.9: numpy-stl version 3.1.2 and above
+
+For the K3 environment (Python 3.7 32-bit Windows only):
+```
+pip install numpy-stl==3.1.2 -U --target <UserProto>/site-packages
+```
+
+For ASCII STL files, no additional dependencies are required.
+
+## Performance Tests
+
+Performance test results on a Windows 11 system with AMD Ryzen 7 5800H processor:
+
+### Small model (zynq_chip.stl - 0.01 scale):
+- Time: 1.38 seconds
+- Command: `python stl2wrl.py demo\zynq_chip.stl 0.01`
+
+### Large model (440.stl - 1.0 scale):
+- Size: >150 MB *Due to the very large size of the model, the 440.stl file has not been added to the repository.*
+- Time: 18.17 seconds
+- Command: `python stl2wrl.py demo/440.stl 1`
+
+## Example using a CLG400 footprint:
+```
+# 2.54 Scaling factor for mm/inch conversion
+# Output is stored in demos/zynq_chip.wrl, ready to import into KiCAD
+# Conversion may take ~30 seconds or longer for this model (Spec'd on M1 Macbook Air)
+./stl2wrl.py demos/zynq_chip.stl 2.54
+```
+
+## KiCAD import
+![](demo/images/kicad_1.png)
+![](demo/images/kicad_2.png)
+![](demo/images/kicad_3.png)
+
+## Test model 440
+![](demo/images/440.jpg)
+
+## Contributors
+- Original implementation by Bradley Boccuzzi
+- Improvements by Alexander Dragunkin and SOURCECRAFT CODE assistant

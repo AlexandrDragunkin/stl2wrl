@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+stl2wrl.egg-info/PKG-INFO
+stl2wrl.egg-info/SOURCES.txt
+stl2wrl.egg-info/dependency_links.txt
+stl2wrl.egg-info/entry_points.txt
+stl2wrl.egg-info/requires.txt
+stl2wrl.egg-info/top_level.txt
