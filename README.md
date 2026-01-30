@@ -48,6 +48,15 @@ pip install numpy-stl==3.1.2 -U --target <UserProto>/site-packages
 
 For ASCII STL files, no additional dependencies are required.
 
+### Python 3.7 Support
+
+For Python 3.7 environments, we provide Docker-based testing since GitHub Actions no longer supports this version. To test with Python 3.7:
+
+```bash
+docker build -t stl2wrl-py37 .
+docker run stl2wrl-py37
+```
+
 ## Performance Tests
 
 Performance test results on a Windows 11 system with AMD Ryzen 7 5800H processor:

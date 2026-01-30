@@ -8,7 +8,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setup(
     name="stl2wrl",
-    version="1.1.0a",
+    version="1.1.0b",
     author="Bradley Boccuzzi",
     author_email="bradleyboccuzzi@example.com",
     description="A tool to convert STL files to VRML/WRL format",
